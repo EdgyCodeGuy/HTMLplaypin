@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- Vincent Randol -->
+<head>
+    <title>CSS Testing</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+        /*Here we are using an URL of an online image to change the background of our website. */
+        background-image: url('https://cdn.wallpapersafari.com/49/30/49mKhV.jpg');
+        /* We have to make sure the background image repeats, or else we'll be left with a white background wherever the image cant fit onto. */
+        /*background-repeat: no-repeat; */
+        background-size: cover;
+        }
+        #Start{
+           background-color: rgba(255, 72, 72, 0.116);
+           color: black;
+           border: 2px solid red;
+           font-size: 50px;
+           padding: 20px 40px;
+           border-radius: 0px;
+           transition-duration: 0.2s;
+        }
+        #Start:hover{
+            background-color: rgba(255, 0, 0, 0.493);
+        }
+</style>
+    <!-- This here is a style sheet (most common method)-->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<!-- This is going to be the start of the actual page here. -->
+<!-- Notice the "style." All this does is use one command to change the background color-->
+<body>
+    <!-- All the style properties are inside the divs. To see how each div is effected,
+    look at its class then check style.css to see how its modified.-->
+    <div class="header">
+        <!-- Header1 is the largest header text that you can produce with HTML alone -->
+        <h1>
+           Playing with HTML tags
+        </h1>
+    </div>
+
+    <h2 style="color:azure">
+        Learning HTML structure
+    </h2>
+
+    <!-- Here we experiment with "article." These HTML elements are supported by Chrome, Edge, Firefox, Safari, and Opera -->
+    <!-- Notice how we're using 'imbedded style.' This element is used only once so its good-->
+    <article style="background-color: rgb(50, 113, 168); margin-top: 100px; padding-bottom: 5px; margin-bottom: 20px;">
+        <header>
+         <h1>Here we experiment with "article" tags. These HTML elements are supported by Chrome, Edge, Firefox, Safari, and Opera </h1>
+          <p>This text is within the header tags</p>
+          <p>These two lines are paragraph tags.</p>
+        </header>
+        <p>This text is outside the header tags, but within the article tags</p>
+      </article>
+      
+
+
+    <!-- It is best to utilize styles in divs. All items within a div will then be stylized.-->
+    <div id="section1">
+        <ul>
+            <h4>
+                Header 4 text
+            </h4>
+            <p>
+                This is an example of boxed text within divs. I used this in the previous project. With the solid border colors it looks very clean!
+            </p>
+        </ul>
+
+
+        <!-- For this image, we included pic_trulli.jpg within the folder itself, so no additional directory information is needed. -->
+        <H1 style="margin-top: 80px">Click on the image below for the image sources!</H1>
+        <!-- The a tag is able to link to w3Schools if clicked on-->
+        <a href="https://www.w3schools.com/html/html_images.asp">
+            <img src="pic_trulli.jpg" alt="Italian Trulli">
+            <img src="img_chania.jpg" alt="Flowers in Chania">
+        </a>
+        
+    
+</body>
+</html>
